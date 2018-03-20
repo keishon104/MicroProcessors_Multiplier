@@ -5,22 +5,15 @@
 Building file: ../main.c
 Invoking: MSP430 Compiler
 "/Applications/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="/Applications/ti/ccsv7/ccs_base/msp430/include" --include_path="/Users/darpa/Documents/Development/MicroProject/MicroProject" --include_path="/Applications/ti/ccsv7/tools/compiler/ti-cgt-msp430_16.9.4.LTS/include" --advice:power="all" --define=__MSP430F5529__ -g --printf_support=full --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
-"../main.c", line 9: warning #225-D: function "Integer" declared implicitly
-"../main.c", line 58: warning #994-D: missing return statement at end of non-void function "Integer"
-"../main.c", line 21: warning #179-D: variable "a" was declared but never referenced
-"../main.c", line 25: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../main.c", line 28: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../main.c", line 36: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../main.c", line 37: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
-"../main.c", line 40: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../main.c", line 41: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
-"../main.c", line 44: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../main.c", line 44: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
-"../main.c", line 45: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../main.c", line 48: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../main.c", line 37: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
-"../main.c", line 41: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
-"../main.c", line 44: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 10: warning #225-D: function "decToBinary" declared implicitly
+"../main.c", line 9: remark #1535-D: (ULP 8.1) variable "n" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../main.c", line 56: warning #161-D: declaration is incompatible with previous "decToBinary" (declared at line 10)
+"../main.c", line 72: warning #551-D: variable "j" is used before its value is set
+"../main.c", line 66: remark #2553-D: (ULP 14.1) Array index (involving "i") of type "int". Recommend using "unsigned int"
+"../main.c", line 66: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 67: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 73: remark #1532-D: (ULP 5.3) Detected printf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../main.c", line 73: remark #2553-D: (ULP 14.1) Array index (involving "j") of type "int". Recommend using "unsigned int"
 Finished building: ../main.c
  
 Building target: MicroProject.out

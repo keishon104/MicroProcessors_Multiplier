@@ -514,3 +514,98 @@ DO NOT UNPLUG THE INTERFACE DURING THE UPDATE.
 !ENTRY com.ti.ccstudio.debug 1 0 2018-03-02 15:33:03.979
 !MESSAGE DS_ERROR: MSP430: GEL: Encountered a problem loading file: /Users/darpa/Documents/Development/MicroProject/MicroProject/Debug/MicroProject.out Could not open file
 
+!SESSION 2018-03-20 01:31:20.712 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -keyring /Users/darpa/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.ti.ccstudio.branding.product -data /Users/darpa/Documents/Development/MicroProject -product com.ti.ccstudio.branding.product -keyring /Users/darpa/.eclipse_keyring -showlocation
+
+!ENTRY com.ti.common.core 4 0 2018-03-20 01:31:22.546
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2018-03-20 01:31:22.547
+!MESSAGE debugServerDir=/Applications/ti/ccsv7/ccs_base/DebugServer
+
+!ENTRY org.eclipse.core.net 1 0 2018-03-20 01:31:24.397
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2018-03-20 01:46:35.880 -----------------------------------------------
+eclipse.buildId=4.6.0.I20160606-1100
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -keyring /Users/darpa/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -product com.ti.ccstudio.branding.product -data /Users/darpa/Documents/Development/MicroProject -product com.ti.ccstudio.branding.product -keyring /Users/darpa/.eclipse_keyring -showlocation
+
+!ENTRY com.ti.common.core 4 0 2018-03-20 01:46:37.459
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 4 0 2018-03-20 01:46:37.460
+!MESSAGE debugServerDir=/Applications/ti/ccsv7/ccs_base/DebugServer
+
+!ENTRY org.eclipse.core.net 1 0 2018-03-20 01:46:39.077
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.ti.common.project.core 4 0 2018-03-20 01:46:46.666
+!MESSAGE An internal error was logged by 'com.ti.common.project.core'.
+!STACK 0
+java.lang.ClassCastException: org.eclipse.core.internal.resources.Folder cannot be cast to org.eclipse.core.resources.IFile
+	at com.ti.ccstudio.project.ui.internal.ProjectStateListener.onResourceAdded(ProjectStateListener.java:167)
+	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1$1.visit(ProjectStateMonitor.java:249)
+	at com.ti.common.project.core.internal.events.ProjectStateMonitor.notifyListeners(ProjectStateMonitor.java:841)
+	at com.ti.common.project.core.internal.events.ProjectStateMonitor.access$2(ProjectStateMonitor.java:830)
+	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener$1.visit(ProjectStateMonitor.java:247)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:64)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:75)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:48)
+	at com.ti.common.project.core.internal.events.ProjectStateMonitor$ResourceChangeListener.resourceChanged(ProjectStateMonitor.java:227)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:289)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:360)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:147)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface 2 0 2018-03-20 01:47:27.007
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-03-20 01:47:27.007
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(com.ti.ccstudio.debug.ui.command.reloadProgram,Reload Program,
+		Reload program for the selected core(s),
+		Category(com.ti.ccstudio.debug.ui.commandCategory,Code Composer Studio Debug Commands,Set of commands for Code Composer Studio debug actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@25dc2c0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.text.rename.element,Rename - Refactoring ,
+		Renames the selected element,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4cd39c01,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,cocoa,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2018-03-20 01:47:27.007
+!MESSAGE A conflict occurred for ALT+COMMAND+L:
+Binding(ALT+COMMAND+L,
+	ParameterizedCommand(Command(com.ti.ccstudio.debug.ui.command.loadProgram,Load Program...,
+		Load program onto selected core(s),
+		Category(com.ti.ccstudio.debug.ui.commandCategory,Code Composer Studio Debug Commands,Set of commands for Code Composer Studio debug actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7901a5ab,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(ALT+COMMAND+L,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.refactor.extract.local.variable,Extract Local Variable - Refactoring ,
+		Extracts a local variable for the selected expression,
+		Category(org.eclipse.cdt.ui.category.refactoring,Refactor - C++,C/C++ Refactorings,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a7c88f2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,cocoa,system)

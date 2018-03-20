@@ -1,0 +1,76 @@
+#include <msp430.h> 
+#include <stdio.h>
+
+
+
+int main()
+{
+  WDTCTL = WDTPW+WDTHOLD;                   // Stop WDT (DO NOT CHANGE)
+  Integer();
+
+  return 0;
+}
+
+
+
+
+
+
+int Integer(){
+
+    int n, c, k;
+    unsigned int arr[10];
+
+    n = 5;
+    printf("Enter an integer in decimal number system\n");
+    scanf("%d", &n);
+
+    printf("%d in binary number system is:\n", n);
+
+    for (c = 10; c >= 0; c--)
+    {
+      unsigned int i = 0;
+      k = n >> c;
+
+      if (k & 1){
+        printf("1");
+        arr[i]= 1;
+      }
+      else {
+        printf("0");
+        arr[i]= 0;
+      }
+      i++;
+      printf("%d", arr[i]);
+    }
+//    arr[0] = 12;
+    printf("\n");
+
+
+
+//    int ToString = 368;
+//    char str[12];
+//    sprintf(str, "%d", ToString );
+}
+
+
+// function to convert decimal to binary
+void decToBinary(int n)
+{
+    // array to store binary number
+    int binaryNum[1000];
+
+    // counter for binary array
+    int i = 0;
+    while (n > 0) {
+
+        // storing remainder in binary array
+        binaryNum[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
+    int j;
+    // printing binary array in reverse order
+    for (j = i - 1; j >= 0; j--)
+        printf("%d", binaryNum[j]);
+}
